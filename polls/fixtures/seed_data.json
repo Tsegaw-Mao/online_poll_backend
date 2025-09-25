@@ -1,0 +1,130 @@
+[
+  {
+    "model": "polls.user",
+    "pk": 1,
+    "fields": {
+      "username": "admin",
+      "password": "pbkdf2_sha256$260000$examplehash", 
+      "is_superuser": true,
+      "is_staff": true
+    }
+  },
+
+  {
+    "model": "polls.poll",
+    "pk": 1,
+    "fields": {
+      "title": "What is your favorite programming language?",
+      "description": "Vote for the language you enjoy coding in the most.",
+      "expiry_date": "2025-12-31T23:59:59Z",
+      "created_by": 1,
+      "created_at": "2025-09-25T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.option",
+    "pk": 1,
+    "fields": {
+      "poll": 1,
+      "text": "Python",
+      "vote_count": 2
+    }
+  },
+  {
+    "model": "polls.option",
+    "pk": 2,
+    "fields": {
+      "poll": 1,
+      "text": "JavaScript",
+      "vote_count": 1
+    }
+  },
+  {
+    "model": "polls.option",
+    "pk": 3,
+    "fields": {
+      "poll": 1,
+      "text": "Go",
+      "vote_count": 0
+    }
+  },
+  {
+    "model": "polls.vote",
+    "pk": 1,
+    "fields": {
+      "poll": 1,
+      "option": 1,
+      "user": 1,
+      "created_at": "2025-09-25T10:05:00Z"
+    }
+  },
+  {
+    "model": "polls.vote",
+    "pk": 2,
+    "fields": {
+      "poll": 1,
+      "option": 1,
+      "user": 2,
+      "created_at": "2025-09-25T10:06:00Z"
+    }
+  },
+  {
+    "model": "polls.vote",
+    "pk": 3,
+    "fields": {
+      "poll": 1,
+      "option": 2,
+      "user": 3,
+      "created_at": "2025-09-25T10:07:00Z"
+    }
+  },
+
+  {
+    "model": "polls.poll",
+    "pk": 2,
+    "fields": {
+      "title": "Which frontend framework do you prefer?",
+      "description": "React, Vue, or Angular — choose one!",
+      "expiry_date": "2025-11-01T23:59:59Z",
+      "created_by": 1,
+      "created_at": "2025-09-25T11:00:00Z"
+    }
+  },
+  {
+    "model": "polls.option",
+    "pk": 4,
+    "fields": {
+      "poll": 2,
+      "text": "React",
+      "vote_count": 1
+    }
+  },
+  {
+    "model": "polls.option",
+    "pk": 5,
+    "fields": {
+      "poll": 2,
+      "text": "Vue",
+      "vote_count": 0
+    }
+  },
+  {
+    "model": "polls.option",
+    "pk": 6,
+    "fields": {
+      "poll": 2,
+      "text": "Angular",
+      "vote_count": 0
+    }
+  },
+  {
+    "model": "polls.vote",
+    "pk": 4,
+    "fields": {
+      "poll": 2,
+      "option": 4,
+      "user": 1,
+      "created_at": "2025-09-25T11:05:00Z"
+    }
+  }
+]

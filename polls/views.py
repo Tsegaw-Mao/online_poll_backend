@@ -1,9 +1,10 @@
-from rest_framework import viewsets, generics, status
+from rest_framework import viewsets, generics, status, permissions
 from rest_framework.decorators import api_view, permission_classes, action
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
-from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.tokens import RefreshToken, TokenError
+from rest_framework.views import APIView
 
 from .models import Poll, Option, Vote, User
 from .serializers import PollSerializer, UserSerializer
@@ -17,20 +18,20 @@ class UserRegisterView(generics.CreateAPIView):
     permission_classes = [AllowAny]
 
 
-# ---------------- Logout ----------------
-@api_view(["POST"])
-@permission_classes([IsAuthenticated])
-def logout_view(request):
-    """Logout user by blacklisting their refresh token."""
-    try:
-        refresh_token = request.data.get("refresh")
-        if not refresh_token:
-            return Response({"error": "Refresh token required."}, status=400)
-        token = RefreshToken(refresh_token)
-        token.blacklist()
-        return Response({"message": "Logout successful."}, status=200)
-    except Exception:
-        return Response({"error": "Invalid token."}, status=400)
+# # ---------------- Logout ----------------
+# class LogoutView(APIView):
+#     permission_classes = [permissions.IsAuthenticated]
+
+#     def post(self, request):
+#         try:
+#             refresh_token = request.data["refresh"]
+#             token = RefreshToken(refresh_token)
+#             token.blacklist()
+#             return Response(status=status.HTTP_205_RESET_CONTENT)
+#         except KeyError:
+#             return Response({"error": "Refresh token required"}, status=status.HTTP_400_BAD_REQUEST)
+#         except TokenError:
+#             return Response({"error": "Invalid token"}, status=status.HTTP_400_BAD_REQUEST)
 
 
 # ---------------- Poll CRUD ----------------

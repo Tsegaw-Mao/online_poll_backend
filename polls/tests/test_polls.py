@@ -15,7 +15,7 @@ class PollSystemTest(APITestCase):
     def setUp(self):
         # Setup API client and base user
         self.client = APIClient()
-        self.user_data = {"username": "testuser", "password": "password123"}
+        self.user_data = {"username": "polls_user", "password": "password123"}
         self.user = User.objects.create_user(**self.user_data)
 
         # Common URLs
