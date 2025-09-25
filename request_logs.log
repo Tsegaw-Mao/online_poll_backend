@@ -12114,3 +12114,157 @@ curl -X 'GET' 'http://localhost:8000/api/polls/2/' \
 [Response] GET /api/polls/2/ -> 403
 Forbidden: /api/polls/2/
 "GET /api/polls/2/ HTTP/1.1" 403 172
+[Incoming Request]
+curl -X 'GET' 'http://localhost:8000/api/polls/2/' \
+    -H 'Content-Length: ' \
+    -H 'Content-Type: text/plain' \
+    -H 'Host: localhost:8000' \
+    -H 'Connection: keep-alive' \
+    -H 'Sec-Ch-Ua-Platform: "Linux"' \
+    -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4ODM1MTM4LCJpYXQiOjE3NTg4MzQ4MzgsImp0aSI6ImIwYTcwYjVkMjdiODQzNGRhNzAwMDBiNjcxZGUzZGNjIiwidXNlcl9pZCI6IjExIn0.GPfGgAvi-H2udgmvmbbrW_nHjRAcHmQWuPTe_jF-jjE' \
+    -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \
+    -H 'Accept: application/json, text/plain, */*' \
+    -H 'Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"' \
+    -H 'Sec-Ch-Ua-Mobile: ?0' \
+    -H 'Origin: http://localhost:5173' \
+    -H 'Sec-Fetch-Site: same-site' \
+    -H 'Sec-Fetch-Mode: cors' \
+    -H 'Sec-Fetch-Dest: empty' \
+    -H 'Referer: http://localhost:5173/' \
+    -H 'Accept-Encoding: gzip, deflate, br, zstd' \
+    -H 'Accept-Language: hmn,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr-CA;q=0.6,fr;q=0.5'
+[Response] GET /api/polls/2/ -> 403
+Forbidden: /api/polls/2/
+"GET /api/polls/2/ HTTP/1.1" 403 172
+[Incoming Request]
+curl -X 'GET' 'http://localhost:8000/api/polls/2/' \
+    -H 'Content-Length: ' \
+    -H 'Content-Type: text/plain' \
+    -H 'Host: localhost:8000' \
+    -H 'Connection: keep-alive' \
+    -H 'Sec-Ch-Ua-Platform: "Linux"' \
+    -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4ODM1MTM4LCJpYXQiOjE3NTg4MzQ4MzgsImp0aSI6ImIwYTcwYjVkMjdiODQzNGRhNzAwMDBiNjcxZGUzZGNjIiwidXNlcl9pZCI6IjExIn0.GPfGgAvi-H2udgmvmbbrW_nHjRAcHmQWuPTe_jF-jjE' \
+    -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \
+    -H 'Accept: application/json, text/plain, */*' \
+    -H 'Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"' \
+    -H 'Sec-Ch-Ua-Mobile: ?0' \
+    -H 'Origin: http://localhost:5173' \
+    -H 'Sec-Fetch-Site: same-site' \
+    -H 'Sec-Fetch-Mode: cors' \
+    -H 'Sec-Fetch-Dest: empty' \
+    -H 'Referer: http://localhost:5173/' \
+    -H 'Accept-Encoding: gzip, deflate, br, zstd' \
+    -H 'Accept-Language: hmn,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr-CA;q=0.6,fr;q=0.5'
+[Response] GET /api/polls/2/ -> 403
+Forbidden: /api/polls/2/
+"GET /api/polls/2/ HTTP/1.1" 403 172
+[Incoming Request]
+curl -X 'GET' 'http://localhost:8000/api/polls/2/' \
+    -H 'Content-Length: ' \
+    -H 'Content-Type: text/plain' \
+    -H 'Host: localhost:8000' \
+    -H 'Connection: keep-alive' \
+    -H 'Sec-Ch-Ua-Platform: "Linux"' \
+    -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4ODM1MTM4LCJpYXQiOjE3NTg4MzQ4MzgsImp0aSI6ImIwYTcwYjVkMjdiODQzNGRhNzAwMDBiNjcxZGUzZGNjIiwidXNlcl9pZCI6IjExIn0.GPfGgAvi-H2udgmvmbbrW_nHjRAcHmQWuPTe_jF-jjE' \
+    -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \
+    -H 'Accept: application/json, text/plain, */*' \
+    -H 'Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"' \
+    -H 'Sec-Ch-Ua-Mobile: ?0' \
+    -H 'Origin: http://localhost:5173' \
+    -H 'Sec-Fetch-Site: same-site' \
+    -H 'Sec-Fetch-Mode: cors' \
+    -H 'Sec-Fetch-Dest: empty' \
+    -H 'Referer: http://localhost:5173/' \
+    -H 'Accept-Encoding: gzip, deflate, br, zstd' \
+    -H 'Accept-Language: hmn,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr-CA;q=0.6,fr;q=0.5'
+[Response] GET /api/polls/2/ -> 403
+Forbidden: /api/polls/2/
+"GET /api/polls/2/ HTTP/1.1" 403 172
+[Incoming Request]
+curl -X 'GET' 'http://localhost:8000/api/polls/2/' \
+    -H 'Content-Length: ' \
+    -H 'Content-Type: text/plain' \
+    -H 'Host: localhost:8000' \
+    -H 'Connection: keep-alive' \
+    -H 'Sec-Ch-Ua-Platform: "Linux"' \
+    -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4ODM1MTM4LCJpYXQiOjE3NTg4MzQ4MzgsImp0aSI6ImIwYTcwYjVkMjdiODQzNGRhNzAwMDBiNjcxZGUzZGNjIiwidXNlcl9pZCI6IjExIn0.GPfGgAvi-H2udgmvmbbrW_nHjRAcHmQWuPTe_jF-jjE' \
+    -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \
+    -H 'Accept: application/json, text/plain, */*' \
+    -H 'Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"' \
+    -H 'Sec-Ch-Ua-Mobile: ?0' \
+    -H 'Origin: http://localhost:5173' \
+    -H 'Sec-Fetch-Site: same-site' \
+    -H 'Sec-Fetch-Mode: cors' \
+    -H 'Sec-Fetch-Dest: empty' \
+    -H 'Referer: http://localhost:5173/' \
+    -H 'Accept-Encoding: gzip, deflate, br, zstd' \
+    -H 'Accept-Language: hmn,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr-CA;q=0.6,fr;q=0.5'
+[Response] GET /api/polls/2/ -> 403
+Forbidden: /api/polls/2/
+"GET /api/polls/2/ HTTP/1.1" 403 172
+[Incoming Request]
+curl -X 'GET' 'http://localhost:8000/api/polls/2/' \
+    -H 'Content-Length: ' \
+    -H 'Content-Type: text/plain' \
+    -H 'Host: localhost:8000' \
+    -H 'Connection: keep-alive' \
+    -H 'Sec-Ch-Ua-Platform: "Linux"' \
+    -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4ODM1MTM4LCJpYXQiOjE3NTg4MzQ4MzgsImp0aSI6ImIwYTcwYjVkMjdiODQzNGRhNzAwMDBiNjcxZGUzZGNjIiwidXNlcl9pZCI6IjExIn0.GPfGgAvi-H2udgmvmbbrW_nHjRAcHmQWuPTe_jF-jjE' \
+    -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \
+    -H 'Accept: application/json, text/plain, */*' \
+    -H 'Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"' \
+    -H 'Sec-Ch-Ua-Mobile: ?0' \
+    -H 'Origin: http://localhost:5173' \
+    -H 'Sec-Fetch-Site: same-site' \
+    -H 'Sec-Fetch-Mode: cors' \
+    -H 'Sec-Fetch-Dest: empty' \
+    -H 'Referer: http://localhost:5173/' \
+    -H 'Accept-Encoding: gzip, deflate, br, zstd' \
+    -H 'Accept-Language: hmn,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr-CA;q=0.6,fr;q=0.5'
+[Response] GET /api/polls/2/ -> 403
+Forbidden: /api/polls/2/
+"GET /api/polls/2/ HTTP/1.1" 403 172
+[Incoming Request]
+curl -X 'GET' 'http://localhost:8000/api/polls/2/' \
+    -H 'Content-Length: ' \
+    -H 'Content-Type: text/plain' \
+    -H 'Host: localhost:8000' \
+    -H 'Connection: keep-alive' \
+    -H 'Sec-Ch-Ua-Platform: "Linux"' \
+    -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4ODM1MTM4LCJpYXQiOjE3NTg4MzQ4MzgsImp0aSI6ImIwYTcwYjVkMjdiODQzNGRhNzAwMDBiNjcxZGUzZGNjIiwidXNlcl9pZCI6IjExIn0.GPfGgAvi-H2udgmvmbbrW_nHjRAcHmQWuPTe_jF-jjE' \
+    -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \
+    -H 'Accept: application/json, text/plain, */*' \
+    -H 'Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"' \
+    -H 'Sec-Ch-Ua-Mobile: ?0' \
+    -H 'Origin: http://localhost:5173' \
+    -H 'Sec-Fetch-Site: same-site' \
+    -H 'Sec-Fetch-Mode: cors' \
+    -H 'Sec-Fetch-Dest: empty' \
+    -H 'Referer: http://localhost:5173/' \
+    -H 'Accept-Encoding: gzip, deflate, br, zstd' \
+    -H 'Accept-Language: hmn,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr-CA;q=0.6,fr;q=0.5'
+[Response] GET /api/polls/2/ -> 403
+Forbidden: /api/polls/2/
+"GET /api/polls/2/ HTTP/1.1" 403 172
+[Incoming Request]
+curl -X 'GET' 'http://localhost:8000/api/polls/2/' \
+    -H 'Content-Length: ' \
+    -H 'Content-Type: text/plain' \
+    -H 'Host: localhost:8000' \
+    -H 'Connection: keep-alive' \
+    -H 'Sec-Ch-Ua-Platform: "Linux"' \
+    -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4ODM1MTM4LCJpYXQiOjE3NTg4MzQ4MzgsImp0aSI6ImIwYTcwYjVkMjdiODQzNGRhNzAwMDBiNjcxZGUzZGNjIiwidXNlcl9pZCI6IjExIn0.GPfGgAvi-H2udgmvmbbrW_nHjRAcHmQWuPTe_jF-jjE' \
+    -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \
+    -H 'Accept: application/json, text/plain, */*' \
+    -H 'Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"' \
+    -H 'Sec-Ch-Ua-Mobile: ?0' \
+    -H 'Origin: http://localhost:5173' \
+    -H 'Sec-Fetch-Site: same-site' \
+    -H 'Sec-Fetch-Mode: cors' \
+    -H 'Sec-Fetch-Dest: empty' \
+    -H 'Referer: http://localhost:5173/' \
+    -H 'Accept-Encoding: gzip, deflate, br, zstd' \
+    -H 'Accept-Language: hmn,en-US;q=0.9,en;q=0.8,ja;q=0.7,fr-CA;q=0.6,fr;q=0.5'
+[Response] GET /api/polls/2/ -> 403
+Forbidden: /api/polls/2/
+"GET /api/polls/2/ HTTP/1.1" 403 172
