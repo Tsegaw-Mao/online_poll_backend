@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -27,13 +26,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
+# SECRET_KEY = 'django-insecure-3&+c(5o8n$7g%1l^$z2_!f6d7*9p#@#k'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS").split(",")
 
+# SECRET_KEY= 'django-insecure-7x=+msx*45)lh7f(l#!$$5y275_45!gv@(gfl6t7f$s8q_81t0'
+# DEBUG=False
+# ALLOWED_HOSTS=["*"] 
 
 # Application definition
 
@@ -65,7 +69,6 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    "polls.middleware.RequestLoggingMiddleware",
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     
      # ✅ Custom Polls Middleware
@@ -95,14 +98,40 @@ WSGI_APPLICATION = 'online_poll_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'polls_db_test',
+#         'USER': 'polls_user_test',
+#         'PASSWORD': 'polls_user_pw_test',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'online_poll_test_db',
+#         'USER': 'poll_test_user',
+#         'PASSWORD': 'online_poll_db_test_pw',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
+
+# DB_NAME=online_poll_test_db
+# DB_USER=poll_test_user
+# DB_PASSWORD=online_poll_db_test_pw
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv("DB_NAME"),
-        'USER': os.getenv("DB_USER"),
-        'PASSWORD': os.getenv("DB_PASSWORD"),
-        'HOST': os.getenv("DB_HOST"),
-        'PORT': os.getenv("DB_PORT"),
+        'NAME': os.getenv("POSTGRES_DB"),
+        'USER': os.getenv("POSTGRES_USER"),
+        'PASSWORD': os.getenv("POSTGRES_PASSWORD"),
+        'HOST': os.getenv("POSTGRES_HOST"),
+        'PORT': os.getenv("POSTGRES_PORT"),
     }
 }
 
