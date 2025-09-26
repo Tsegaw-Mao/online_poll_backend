@@ -1,3 +1,5 @@
+# polls/models.py
+
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.utils import timezone
@@ -44,3 +46,7 @@ class Vote(models.Model):
 
     class Meta:
         unique_together = ("poll", "user")  # prevent duplicate votes
+        indexes = [
+            models.Index(fields=["user"]),
+            models.Index(fields=["poll", "user"]),
+        ]
