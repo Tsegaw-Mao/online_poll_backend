@@ -27,7 +27,7 @@ class PollsMiddleware(MiddlewareMixin):
             f"[Request] {request.method} {request.path} by {user if user and user.is_authenticated else 'Anonymous'}"
         )
 
-        # ✅ Restrict polls per day (e.g., max 5 per user per day)
+        # Restrict polls per day (e.g., max 5 per user per day)
         if request.path.startswith("/api/polls/") and request.method == "POST":
             if user and user.is_authenticated:
                 today = now().date()

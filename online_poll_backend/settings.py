@@ -10,8 +10,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 DEBUG = os.getenv("DEBUG", "False") == "True"
-# ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost").split(",") use this to specify allowed hosts in production
-ALLOWED_HOSTS = ["*"]  # Use this to allow all hosts (not recommended for production)   
+# ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost").split(",") 
+ALLOWED_HOSTS = ["*"]   # Allow all hosts
 
 # Application definition
 INSTALLED_APPS = [
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
 AUTH_USER_MODEL = "polls.User"
 
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",  # Must be first
+    "corsheaders.middleware.CorsMiddleware",  
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -121,8 +121,8 @@ REST_FRAMEWORK = {
 }
 
 # CORS
-# CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "").split(",")  # Use this if you want to specify allowed origins
-CORS_ALLOW_ALL_ORIGINS = True  # Use this to allow all origins (not recommended for production)
+# CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "").split(",")  
+CORS_ALLOW_ALL_ORIGINS = True  # allow all origins
 CORS_ALLOW_CREDENTIALS = True
 
 # Security settings for HTTPS

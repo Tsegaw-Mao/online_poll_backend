@@ -34,7 +34,7 @@ class PollSerializer(serializers.ModelSerializer):
     options = OptionSerializer(many=True, read_only=True)
     created_by = serializers.SerializerMethodField()
     # provide expiry_date as-is (keeps original name) and created_at already exists
-    # total_votes will be provided by queryset annotation (if present)
+    # total_votes will be provided by queryset annotation
     total_votes = serializers.IntegerField(read_only=True, required=False)
 
     class Meta:
